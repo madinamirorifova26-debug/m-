@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    max-width: 1440px;
+    height: 1024px;
+    margin: 0 auto;
+    border: 2px solid red;
+    background-color: #202C36;
+ }
+ .nav{
+    width: 100%;
+    display: flex;
+    margin-left: 81px;
+    padding: 23px 0;
+ }
+ .nav h2{
+    font-weight: 800;
+    font-size: 24px;
+    color: white;
+ }
+ .nav p{
+    margin-left: 1000px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+}
+.section input{
+    width: 450px;
+    height: 56px;
+    margin-top: 48px;
+    margin-left: 80px;
+    font-weight: 400;
+    font-size: 20px;
+    padding-left: 74px;
+     color: white;
+    background-color: #202C36;
+    text-shadow: 0px 2px 2px white;
+    box-shadow: 0px 2px 2px 3px white;
+}
+.main{
+    width: 1280px;
+    height: 336px;
+    margin-top: 48px;
+    margin-left: 80px;
+}
+.main1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+.box{
+    width: 264px;
+    height: 250px;
+    border-radius: 5px;
+    margin-top: 70px;
+}
+.box p{
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+    color: white;
+}
+@media (max-width:834px) {
+     .header{
+        width: 900px;
+        height: 1950px;
+        background-color: #202C36;
+     }
+     .main1{
+        flex-wrap: wrap;
+     }
+     .box{
+        width: 400px;
+        height: 300px;
+     }
+     .box p{
+        margin-left: -90px;
+     }
+     .section input{
+        width: 768px;
+        height: 101px;
+     }
+     .nav p{
+       margin-left: 450px;
+       color: rgb(245, 241, 241);
+     }
+} 
+@media (max-width:400px) {
+    .header{
+        width: 500px;
+        height: 3350px;
+    }
+
+    .main1{
+        flex-direction: column;
+    }
+    .box{
+        width: 250px;
+        height: 250px;
+    }
+    .box p{
+        margin-left: 30px;
+    }
+    .section input{
+        width: 343px;
+        height: 48px;
+    }
+    .nav p{
+        color: rgb(250, 246, 246);
+        margin-left: 60px;
+    }
+}
